@@ -114,6 +114,32 @@
           }
         }
       }
+    },
+    "intro": {
+      "projectType": "library",
+      "root": "libs/intro",
+      "sourceRoot": "libs/intro/src",
+      "prefix": "collection",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/intro/tsconfig.lib.json",
+              "libs/intro/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/intro/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/intro"],
+          "options": {
+            "jestConfig": "libs/intro/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {
