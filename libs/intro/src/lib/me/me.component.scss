@@ -1,0 +1,39 @@
+@import '/node_modules/bootstrap/scss/bootstrap-utilities.scss';
+
+.me {
+  display: block;
+  min-width: calc(200px + 1rem);
+  margin-top: 1rem;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+
+  @include media-breakpoint-down(sm) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+    justify-content: center;
+  }
+
+  & .avatar {
+    display: flex;
+    justify-content: center;
+
+    & div {
+      background-image: url('https://avatars1.githubusercontent.com/u/19747393?s=460&u=4f60df8d67da8077f073022802f80e6415f219ca&v=4');
+      background-size: cover;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  & .describe {
+    @include media-breakpoint-up(md) {
+      margin-left: 2rem;
+    }
+  }
+}
