@@ -1,0 +1,25 @@
+<router-outlet></router-outlet>
+<div class="home">
+  <div class="row g-0">
+    <ng-container *ngFor="let i of [1, 2, 3, 4, 5, 6]">
+      <div class="block col-4">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Shiba Inu</mat-card-title>
+            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+          </mat-card-header>
+          <img
+            mat-card-image
+            src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+            alt="Photo of a Shiba Inu"
+          />
+          <mat-card-content>
+            <button mat-button>LIVE DEMO</button>
+            <button mat-button>SHARE</button>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </ng-container>
+  </div>
+</div>

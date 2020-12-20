@@ -1,0 +1,21 @@
+@import '/node_modules/bootstrap/scss/bootstrap-utilities.scss';
+
+.home {
+  margin-left: 15%;
+  margin-right: 15%;
+
+  @include media-breakpoint-down(sm) {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  & .example-card {
+    max-width: 400px;
+    margin-bottom: 1rem;
+  }
+
+  & .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+}
