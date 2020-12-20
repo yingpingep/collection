@@ -1,7 +1,6 @@
 @import '/node_modules/bootstrap/scss/bootstrap-utilities.scss';
 
 .me {
-  display: block;
   min-width: calc(200px + 1rem);
   margin-top: 1rem;
   margin-left: 15%;
@@ -9,13 +8,8 @@
   margin-bottom: 1rem;
 
   @include media-breakpoint-down(sm) {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-  @include media-breakpoint-up(md) {
-    display: flex;
-    justify-content: center;
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
 
   & .avatar {
