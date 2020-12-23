@@ -9,14 +9,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
-  imports: [
-    BrowserModule,
-    RoutingModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    MatCardModule,
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, RoutingModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
