@@ -1,0 +1,12 @@
+<mat-card class="demo-card">
+  <mat-card-header>
+    <img mat-card-avatar [src]="case.avatarSource" />
+    <mat-card-title>{{ case.title }}</mat-card-title>
+    <mat-card-subtitle>{{ case.subTitle }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="case.screenShotSource" [alt]="case.title" />
+  <mat-card-content>
+    <button mat-button [disabled]="!case.isDone">LIVE DEMO</button>
+    <button mat-button [disabled]="!case.isDone">SHARE</button>
+  </mat-card-content>
+</mat-card>

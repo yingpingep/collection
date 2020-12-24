@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import { DemoCardComponent } from '../demo-card/demo-card.component';
+import { DemoCardComponent } from './demo-card/demo-card.component';
 
 @NgModule({
   declarations: [HomeComponent, DemoCardComponent],
