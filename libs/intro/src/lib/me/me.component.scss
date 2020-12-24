@@ -29,5 +29,9 @@
     @include media-breakpoint-up(md) {
       margin-left: 2rem;
     }
+
+    @include media-breakpoint-down(md) {
+      margin-left: 0.5rem;
+    }
   }
 }

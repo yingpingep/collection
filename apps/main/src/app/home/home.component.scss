@@ -8,4 +8,12 @@
     margin-left: 0rem;
     margin-right: 0rem;
   }
+
+  & .block {
+    @include media-breakpoint-down(lg) {
+      &:last-child {
+        margin-bottom: 1rem;
+      }
+    }
+  }
 }

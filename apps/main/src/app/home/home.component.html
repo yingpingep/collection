@@ -1,8 +1,8 @@
 <router-outlet></router-outlet>
 <div class="home">
-  <div class="row g-0">
+  <div class="block row g-0">
     <ng-container *ngFor="let item of showcaseSrv.getShowcases()">
-      <div class="block col-lg-4 col-12">
+      <div class="col-lg-4 col-12">
         <collection-demo-card [case]="item"></collection-demo-card>
       </div>
     </ng-container>
